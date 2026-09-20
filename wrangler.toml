@@ -1,0 +1,11 @@
+name = "pachecker-db-bridge"
+main = "db-bridge-worker/index.ts"
+compatibility_date = "2026-09-20"
+compatibility_flags = ["nodejs_compat"]
+
+# Create the Hyperdrive configuration with SQL response caching disabled:
+# wrangler hyperdrive create pachecker-db --connection-string="mysql://..." --caching-disabled
+# Then set DB_BRIDGE_TOKEN with: wrangler secret put DB_BRIDGE_TOKEN
+[[hyperdrive]]
+binding = "HYPERDRIVE"
+id = "REPLACE_WITH_HYPERDRIVE_ID"
