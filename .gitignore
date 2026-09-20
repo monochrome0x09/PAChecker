@@ -45,7 +45,7 @@ next-env.d.ts
 .wrangler/
 .dev.vars*
 data/
-uploads/
+/uploads/
 *.key
 *.p12
 *.pfx
